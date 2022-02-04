@@ -11,6 +11,10 @@ const store = window.localStorage;
 
 const container = $(".container");
 
+const present = $(".present");
+const past = $(".past");
+const future = $(".future");
+
 const now = moment();
 
 const currentTime = { text: moment().format("h:00 A"), hour: moment().hour() };
@@ -39,10 +43,10 @@ const hoursOfTheDay = Array.from(new Array(24)).map((v, i) => {
 
 function color(time) {
   return time.text === currentTime.text
-    ? $(".present")
+    ? "present"
     : time.hour < now
-      ? $(".past")
-      : $(".future");
+      ? "past"
+      : "future";
 }
 
 hoursOfTheDay.forEach((hr) => {
