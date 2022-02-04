@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "luxon": "^2.3.0",
+    "moment": "^2.29.1",
+    "require": "^0.4.4",
+    "requirejs": "^2.3.6"
+  }
+}
